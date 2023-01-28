@@ -3,7 +3,7 @@
 
 YorkU Full Stack Program Project
 
-### Figma Design Link: https://www.figma.com/file/HaMJbXliECEywGZ3WAd5gr/PupPals?node-id=0%3A1&t=Z83u2U5cKxmQxlk7-0
+### Figma Design Link: https://www.figma.com/file/HaMJbXliECEywGZ3WAd5gr/PupPals?node-id=0%3A1&t=JVUmwWMKJY4v9ocW-1
 
 ### User Stories
 
