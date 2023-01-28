@@ -18,5 +18,5 @@ Admin:
 1. As an admin, I want to be able to manage all user accounts, so that I can approve new registrations and disable accounts that violate the policies.
 2. As an admin, I want to be able to match dogs with user's preferences, so that users are able to find the perfect playdates.
 3. As an admin, I want to be able to monitor account activities, so that I can analyze usage statistics.
-4. As an admin, I want to be able to send messages to users, so that I can inform them of important updates and promotions.
+4. As an admin, I want to be able to send messages to users, so that I can notify them of new dogs in the area, important update and promotions.
 
