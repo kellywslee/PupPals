@@ -1,5 +1,5 @@
 # PupPals
-#### (Find doggie playdates at PupPals!)
+### (Find doggie playdates at PupPals!)
 
 YorkU Full Stack Program Project
 
