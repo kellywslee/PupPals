@@ -1,0 +1,142 @@
+.nav-bar {
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: var(--green1);
+  z-index: 2;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.menu a:visited {
+  color: var(--gray3);
+}
+
+.login-button {
+  font-weight: bold;
+}
+
+.register-button {
+  font-weight: bold;
+  background-color: var(--white);
+  padding: 1rem;
+  border-radius: 0.8rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem rgba(155, 154, 154, 0.25);
+  
+}
+
+/* Menu Button */
+
+.menu-button-container {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 3.2rem;
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* Hamburger Button */
+
+.hamburger-button,
+.hamburger-button::before,
+.hamburger-button::after {
+  display: block;
+  position: absolute;
+  width: 3.2rem;
+  height: 0.4rem;
+  border-radius: 0.2rem;
+  background-color: var(--gray3);
+  transition: transform 0.4s ease-in-out;
+}
+
+.hamburger-button::before {
+  content: "";
+  margin-top: -1rem;
+}
+
+.hamburger-button::after {
+  content: "";
+  margin-top: 1rem;
+}
+
+#menu-toggle:checked + .menu-button-container .hamburger-button::before {
+  margin-top: 0;
+  transform: rotate(45deg);
+}
+
+#menu-toggle:checked + .menu-button-container .hamburger-button {
+  background: rgba(256, 256, 256, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .hamburger-button::after {
+  margin-top: 0;
+  transform: rotate(-45deg);
+} 
+
+@media (max-width: 700px) {
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 7.8rem;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index:100;
+    background-color: var(--white);
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    height: 2.5rem;
+    padding: 0.5rem;
+    transition: height 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5rem 0;
+    width: 100%;
+    color: var(--gray3);
+    background-color: var(--white);
+    }
+
+    #register-button {
+      padding: 0;
+      box-shadow: none;
+  }
+}

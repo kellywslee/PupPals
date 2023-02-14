@@ -1,0 +1,36 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--green2);
+  color: var(--white);
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+footer p {
+  text-align: center;
+}
+
+.footer-right {
+  display: flex;
+}
+
+.footer-right a {
+  width: 3rem;
+  margin: 1rem;
+}  
+
+
+@media (min-width: 1280px) {
+  footer {
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  }
+
+  footer p {
+    text-align: left;
+    font-size: 2rem;
+  }
+}
