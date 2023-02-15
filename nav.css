@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem;
+  padding: 2rem 4rem;
   background-color: var(--green1);
   z-index: 2;
 }
@@ -26,12 +26,21 @@
   padding: 1rem;
 }
 
+.menu a {
+  transition: font-weight 0.5s;
+}
+
 .menu a:visited {
   color: var(--gray3);
 }
 
+.menu a:hover {
+  font-weight: bold;
+}
+
 .login-button {
   font-weight: bold;
+  transition: box-shadow 0.5s;
 }
 
 .register-button {
@@ -39,8 +48,11 @@
   background-color: var(--white);
   padding: 1rem;
   border-radius: 0.8rem;
+  transition: box-shadow 0.5s;
+}
+
+.login-button:hover, .register-button:hover {
   box-shadow: 0.2rem 0.2rem 0.5rem rgba(155, 154, 154, 0.25);
-  
 }
 
 /* Menu Button */
@@ -97,21 +109,20 @@
   transform: rotate(-45deg);
 } 
 
-@media (max-width: 700px) {
+@media (max-width: 950px) {
   .menu-button-container {
     display: flex;
   }
   .menu {
     position: absolute;
     top: 0;
-    margin-top: 7.8rem;
     left: 0;
+    margin-top: 7.8rem;
     flex-direction: column;
     width: 100%;
     justify-content: center;
     align-items: center;
     z-index:100;
-    background-color: var(--white);
   }
   #menu-toggle ~ .menu li {
     height: 0;
@@ -121,22 +132,18 @@
     transition: height 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
   }
   #menu-toggle:checked ~ .menu li {
-    height: 2.5rem;
+    height: 3.5rem;
     padding: 0.5rem;
     transition: height 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
   }
   .menu > li {
     display: flex;
     justify-content: center;
-    margin: 0;
-    padding: 0.5rem 0;
     width: 100%;
     color: var(--gray3);
     background-color: var(--white);
     }
-
-    #register-button {
-      padding: 0;
+    .register-button {
       box-shadow: none;
   }
 }

@@ -4,7 +4,7 @@
   --green1:#CBF3F0;
   --green2: #2EC4B6;
   --gray1: #f0efef;
-  --gray2: #d2cfcf;
+  --gray2: #e6e2e2;
   --gray3: #323232;
 }
 
@@ -85,15 +85,20 @@ section {
   max-width: 90rem;
 }
 
+@media (min-width: 700px) and (max-width: 1279px) {
+  main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;;
+  }
+}
+
 @media (min-width: 1280px) {
   main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 3rem;
-  }
-
-  section {
-   align-self: center;
-   justify-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
+  align-items:center;
+  justify-self: center;
   }
 }
