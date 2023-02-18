@@ -95,10 +95,13 @@ section {
 
 @media (min-width: 1280px) {
   main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 3rem;
-  align-items:center;
-  justify-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  
   }
+ .search-container {
+  flex-shrink: 1;
+ }
 }
