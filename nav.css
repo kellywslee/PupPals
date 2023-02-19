@@ -52,7 +52,7 @@
 }
 
 .login-button:hover, .register-button:hover {
-  box-shadow: 0.2rem 0.2rem 0.5rem rgba(155, 154, 154, 0.25);
+  box-shadow: 2px 2px 5px rgba(155, 154, 154, 0.25);
 }
 
 /* Menu Button */
