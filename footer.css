@@ -24,7 +24,23 @@ footer p {
 
 @media (min-width: 1280px) {
 
+  footer {
+    display: grid;
+    grid-template-columns: 25rem minmax(auto, 150rem);
+    justify-content: center;
+    padding: 2rem 4rem;
+  }
+
+  .footer-left {
+    justify-self: start;
+  }
+  
+  .footer-right {
+    justify-self: end;
+  }
+
   footer p {
     font-size: 1.5rem;
+    text-align: left;
   }
 }
