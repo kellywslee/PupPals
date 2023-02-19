@@ -46,47 +46,43 @@
 
       <section class="search-section">
 
-        <div class="search-container">
+        <form class="search-container">
           <h1>find doggie playdates at <span>PupPals</span></h1>
           <img class="main-photo" src="images\pups.jpg" alt="three dogs looking up to get a treat">
-  
-          <p class="size">Size</p>
-          <div class="size-container">
-            <div class="small">
+          <fieldset class="size-field">
+            <legend class="size">Size</legend>
+            <div class="size-container">
               <input type="checkbox" id="small" value="small" name="size">
               <label for="small">&lt;  20lb</label>
-            </div>
-            <div class="medium">
               <input type="checkbox" id="medium" value="medium" name="size">
               <label for="medium">20-55lb</label>
-            </div>
-            <div class="large">
               <input type="checkbox" id="large" value="large" name="size">
               <label for="large">&gt;  55lb</label>
             </div>
-          </div>
-          
-          <p class="energy-level">Energy Level</p>
-          <div class="energy-level-container">
-            <div class="low">
+          </fieldset>
+
+          <fieldset class="energy-level-field">
+            <legend class="energy-level">Energy Level</legend>
+            <div class="energy-level-container">
               <input type="checkbox" id="low" value="low" name="energy-level">
               <label for="low">Low</label>
-            </div>
-            <div class="moderate">
               <input type="checkbox" id="moderate" value="moderate" name="energy-level">
               <label for="moderate">Moderate</label>
-            </div>
-            <div class="high">
               <input type="checkbox" id="high" value="high" name="energy-level">
               <label for="high">High</label>
             </div>
-          </div>
+          </fieldset>
 
-          <p class="find-near">Find Near</p>
-          <input type="text" class="postal-code" id="postalcode" placeholder="Postal Code" pattern="[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d">
-          <button class="orange-button search-button"><a href="#">SEARCH</a></button>
-          
-        </div>
+          <fieldset class="find-near-field">
+            <legend class="find-near">Find Near</legen>
+            <input type="text" class="postal-code" id="postalcode" placeholder="Postal Code" pattern="[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d">
+          </fieldset>
+
+          <fieldset class="search-button-field">
+            <legend class="search">Find PupPals</legend>
+            <button class="orange-button search-button"><a href="#">SEARCH</a></button>
+          </fieldset>
+        </form>
       </section>
       <!-- Search Section End-->
 
@@ -111,15 +107,15 @@
               <img class="pop-up-photo" src="images\buncha.jpg" alt="small cream colour dog">
               <ul class="profile-container">
                 <li class="name">Name: Buncha</li>
-                <li class="breed">Breed: Maltipoo</li>
-                <li class="sex">Sex: M</li>
-                <li class="age">Age: 6yr</li>
-                <li class="weight">Weight: 10lb</li>
-                <li class="distance">0.2km</li>
-                <li class="level-of-energy">Energy-Level: Moderate</li>
-                <li class="favourite-activities">Favourite Activities: Fetching, Going for a walk</li>
-                <li class="name-of-pawrents">Name of Pawrents: Kelly</li>
-                <li class="message">Message: Hello! We are new to the area and looking for a fun playdate!</li>
+                <li class="breed"><span class="bold">Breed:</span> Maltipoo</li>
+                <li class="sex"><span class="bold">Sex:</span> M</li>
+                <li class="age"><span class="bold">Age:</span> 6yr</li>
+                <li class="weight"><span class="bold">Weight:</span> 10lb</li>
+                <li class="distance"><span class="bold">Distance:</span> 0.2km</li>
+                <li class="level-of-energy"><span class="bold">Energy-Level:</span> Moderate</li>
+                <li class="favourite-activities"><span class="bold">Favourite Activities:</span> Fetching, Going for a walk</li>
+                <li class="name-of-pawrents"><span class="bold">Name of Pawrents:</span> Kelly</li>
+                <li class="message"><span class="bold">Message:</span> Hello! We are new to the area and looking for a fun playdate!</li>
               </ul>
               <button class="orange-button add-friend-button">Add Friend</button>
               <button class="orange-button message-button">Message</button>
@@ -145,15 +141,15 @@
               <img class="pop-up-photo" src="images\oreo.jpg" alt="large white and black colour short haired dog">
               <ul class="profile-container">
                 <li class="name">Name: Oreo</li>
-                <li class="breed">Breed: Husky-mix</li>
-                <li class="sex">Sex: F</li>
-                <li class="age">Age: 9yr</li>
-                <li class="weight">Weight: 60lb</li>
-                <li class="distance">Distance: 0.3km</li>
-                <li class="level-of-energy">Energy-Level: Moderate</li>
-                <li class="favourite-activities">Favourite Activities: Hiking</li>
-                <li class="name-of-pawrents">Name of Pawrents: Dominika</li>
-                <li class="message">Message: My pup and I can't wait to make new friends and have some fun at the next meet up. </li>
+                <li class="breed"><span class="bold">Breed:</span> Husky-mix</li>
+                <li class="sex"><span class="bold">Sex:</span> F</li>
+                <li class="age"><span class="bold">Age:</span> 9yr</li>
+                <li class="weight"><span class="bold">Weight:</span> 60lb</li>
+                <li class="distance"><span class="bold">Distance:</span> 0.3km</li>
+                <li class="level-of-energy"><span class="bold">Energy-Level:</span> Moderate</li>
+                <li class="favourite-activities"><span class="bold">Favourite Activities:</span> Hiking</li>
+                <li class="name-of-pawrents"><span class="bold">Name of Pawrents:</span> Dominika</li>
+                <li class="message"><span class="bold">Message:</span> My pup and I can't wait to make new friends and have some fun at the next meet up. </li>
               </ul>
               <button class="orange-button add-friend-button">Add Friend</button>
               <button class="orange-button message-button">Message</button>
@@ -179,15 +175,15 @@
               <img class="pop-up-photo" src="images\ziggy.jpg" alt="small white and black colour dog">
               <ul class="profile-container">
                 <li class="name">Name: Ziggy</li>
-                <li class="breed">Breed: Shih Tzu</li>
-                <li class="sex">Sex: F</li>
-                <li class="age">Age: 5yr</li>
-                <li class="weight">Weight: 12lb</li>
-                <li class="distance">Distance: 0.7km</li>
-                <li class="level-of-energy">Energy-Level: High</li>
-                <li class="favourite-activities">Favourite Activities: Taking a nap</li>
-                <li class="name-of-pawrents">Name of Pawrents: Angie</li>
-                <li class="message">Message: Hello! Anyone interested in indoor playdates?</li>
+                <li class="breed"><span class="bold">Breed:</span> Shih Tzu</li>
+                <li class="sex"><span class="bold">Sex:</span> F</li>
+                <li class="age"><span class="bold">Age:</span> 5yr</li>
+                <li class="weight"><span class="bold">Weight:</span> 12lb</li>
+                <li class="distance"><span class="bold">Distance:</span> 0.7km</li>
+                <li class="level-of-energy"><span class="bold">Energy-Level:</span> High</li>
+                <li class="favourite-activities"><span class="bold">Favourite Activities:</span> Taking a nap</li>
+                <li class="name-of-pawrents"><span class="bold">Name of Pawrents:</span> Angie</li>
+                <li class="message"><span class="bold">Message:</span> Hello! Anyone interested in indoor playdates?</li>
               </ul>
               <button class="orange-button add-friend-button">Add Friend</button>
               <button class="orange-button message-button">Message</button>
@@ -213,15 +209,15 @@
               <img class="pop-up-photo" src="images\bentley.jpg" alt="ssmall white gray brown mixed colour dog">
               <ul class="profile-container">
                 <li class="name">Name: Bentley</li>
-                <li class="breed">Breed: Mini Aussie Sheppard</li>
-                <li class="sex">Sex: M</li>
-                <li class="age">Age: 3 mo</li>
-                <li class="weight">Weight: 2lb</li>
-                <li class="distance">Distance: 1.0km</li>
-                <li class="level-of-energy">Energy-Level: High</li>
-                <li class="favourite-activities">Favourite Activities: Running</li>
-                <li class="name-of-pawrents">Name of Pawrents: Mark</li>
-                <li class="message">Message: Hi! This is my pup's first time at a dog meet up, so we're both very excited.</li>
+                <li class="breed"><span class="bold">Breed:</span> Mini Aussie Sheppard</li>
+                <li class="sex"><span class="bold">Sex:</span> M</li>
+                <li class="age"><span class="bold">Age:</span> 3 mo</li>
+                <li class="weight"><span class="bold">Weight:</span> 2lb</li>
+                <li class="distance"><span class="bold">Distance:</span> 1.0km</li>
+                <li class="level-of-energy"><span class="bold">Energy-Level:</span> High</li>
+                <li class="favourite-activities"><span class="bold">Favourite Activities:</span> Running</li>
+                <li class="name-of-pawrents"><span class="bold">Name of Pawrents:</span> Mark</li>
+                <li class="message"><span class="bold">Message:</span> Hi! This is my pup's first time at a dog meet up, so we're both very excited.</li>
               </ul>
               <button class="orange-button add-friend-button">Add Friend</button>
               <button class="orange-button message-button">Message</button>
@@ -247,15 +243,15 @@
               <img class="pop-up-photo" src="images\beckham.jpg" alt="small brown silver mixed long haired dog">
               <ul class="profile-container">
                 <li class="name">Name: Beckham</li>
-                <li class="breed">Breed: Morkie</li>
-                <li class="sex">Sex: M</li>
-                <li class="age">Age: 7yr</li>
-                <li class="weight">Weight: 10lb</li>
-                <li class="distance">Distance: 2.2km</li>
-                <li class="level-of-energy">Energy-Level: Moderate</li>
-                <li class="favourite-activities">Favourite Activities: Fetching</li>
-                <li class="name-of-pawrents">Name of Pawrents: Troy</li>
-                <li class="message">Message: Hello dog lovers! Just a friendly paw wave from me and my pooch.</li>
+                <li class="breed"><span class="bold">Breed:</span> Morkie</li>
+                <li class="sex"><span class="bold">Sex:</span> M</li>
+                <li class="age"><span class="bold">Age:</span> 7yr</li>
+                <li class="weight"><span class="bold">Weight:</span> 10lb</li>
+                <li class="distance"><span class="bold">Distance:</span> 2.2km</li>
+                <li class="level-of-energy"><span class="bold">Energy-Level:</span> Moderate</li>
+                <li class="favourite-activities"><span class="bold">Favourite Activities:</span> Fetching</li>
+                <li class="name-of-pawrents"><span class="bold">Name of Pawrents:</span> Troy</li>
+                <li class="message"><span class="bold">Message:</span> Hello dog lovers! Just a friendly paw wave from me and my pooch.</li>
               </ul>
               <button class="orange-button add-friend-button">Add Friend</button>
               <button class="orange-button message-button">Message</button>
@@ -281,15 +277,15 @@
               <img class="pop-up-photo" src="images\mocha.jpg" alt="medium sized brown curly haired dog">
               <ul class="profile-container">
                 <li class="name">Name: Mocha</li>
-                <li class="breed">Breed: Cockapoo</li>
-                <li class="sex">Sex: M</li>
-                <li class="age">Age: 8yr</li>
-                <li class="weight">Weight: 25lb</li>
-                <li class="distance">Distance: 3.2km</li>
-                <li class="level-of-energy">Energy-Level: Low</li>
-                <li class="favourite-activities">Favourite Activities: Swimming</li>
-                <li class="name-of-pawrents">Name of Pawrents: Sai</li>
-                <li class="message">Message: Just wanted to say hi and let you know that my dog and I are eager to attend the next meet up.</li>
+                <li class="breed"><span class="bold">Breed:</span> Cockapoo</li>
+                <li class="sex"><span class="bold">Sex:</span> M</li>
+                <li class="age"><span class="bold">Age:</span> 8yr</li>
+                <li class="weight"><span class="bold">Weight:</span> 25lb</li>
+                <li class="distance"><span class="bold">Distance:</span> 3.2km</li>
+                <li class="level-of-energy"><span class="bold">Energy-Level:</span> Low</li>
+                <li class="favourite-activities"><span class="bold">Favourite Activities:</span> Swimming</li>
+                <li class="name-of-pawrents"><span class="bold">Name of Pawrents:</span> Sai</li>
+                <li class="message"><span class="bold">Message:</span> Just wanted to say hi and let you know that my dog and I are eager to attend the next meet up.</li>
               </ul>
               <button class="orange-button add-friend-button">Add Friend</button>
               <button class="orange-button message-button">Message</button>
