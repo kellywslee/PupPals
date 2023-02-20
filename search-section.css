@@ -119,11 +119,11 @@ input::placeholder {
     padding: 2rem;
     row-gap: 1rem;
     max-width: 60rem;
-    max-height: 82rem;
+    max-height: 80rem;
   }
 
   h1 {
-  font-size: 5rem;
+  font-size: 3rem;
   margin: 0 4rem;
   }
 
@@ -132,11 +132,11 @@ input::placeholder {
   }
 
   legend {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .search-container label {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .postal-code {
