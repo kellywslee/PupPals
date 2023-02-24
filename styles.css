@@ -98,7 +98,7 @@ main {
 }
 
 section {
-  max-width: 92rem;
+  width: 100%;
 }
 
 @media (min-width: 700px) and (max-width: 1279px) {
@@ -295,7 +295,6 @@ section {
   margin: 2rem 0;
   width: 100%;
   min-width: 25rem;
-  max-width: 90rem;
 }
 
 h1 {
@@ -313,7 +312,8 @@ span {
   border-radius: 1rem;
   box-shadow: 5px 5px 5px var(--gray1);
   width: 100%;
-  max-width: 65rem;
+  max-height: 30rem;
+  object-fit: cover;
   justify-self: center;
 }
 
