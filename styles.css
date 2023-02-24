@@ -522,6 +522,7 @@ input::placeholder {
 
   .card {
     grid-template-columns: repeat(2, 1fr);
+    min-width: 33rem;
   }
 
   .profile-photo {
