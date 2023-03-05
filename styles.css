@@ -70,16 +70,8 @@ img {
   background-color: var(--orange);
   border: none;
   transition: opacity 0.5s;
-}
-
-.orange-button a {
-  color: var(--white);
+  color: white;
   font-weight: bold;
-  font-size: 1.2rem;
-}
-
-.orange-button a:visited {
-  color: var(--white);
 }
 
 .orange-button:hover {
@@ -117,7 +109,7 @@ section {
   align-items: center; 
   }
 
-  .orange-button a {
+  .orange-button {
     font-size: 1.5rem;
   }
 }
@@ -495,12 +487,14 @@ input::placeholder {
   width: 8rem;
   word-wrap: break-word;
   padding: 0.3rem;
-  justify-self: end;
 }
 
 .profile-button {
-  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 
 @media (min-width: 660px) and (max-width: 1279px) {
   .profile-section {

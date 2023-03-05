@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PupPals</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Inter:wght@500;700&family=Lato:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Inter:wght@500;700&family=Lato:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-
     <!-- Nav Section -->
 
     <nav class="nav-bar">
       <div class="logo-section">
-        <img class="pupplas-logo" src="images\puppals-logo.svg" alt="puppals_logo">
+        <img
+          class="pupplas-logo"
+          src="images\puppals-logo.svg"
+          alt="puppals_logo"
+        />
       </div>
-      <input id="menu-toggle" type="checkbox">
-      <label class="menu-button-container"for="menu-toggle">
+      <input id="menu-toggle" type="checkbox" />
+      <label class="menu-button-container" for="menu-toggle">
         <div class="hamburger-button"></div>
       </label>
       <ul class="menu">
@@ -34,46 +40,66 @@
     </nav>
 
     <main>
-
       <!-- Search Section -->
 
       <section class="search-section">
-
         <form class="search-container">
           <h1>find doggie playdates at <span>PupPals</span></h1>
-          <img class="main-photo" src="images\pups.jpg" alt="three dogs looking up to get a treat">
+          <img
+            class="main-photo"
+            src="images\pups.jpg"
+            alt="three dogs looking up to get a treat"
+          />
           <fieldset class="size-field">
             <legend class="size">Size</legend>
             <div class="size-container">
-              <input type="checkbox" id="small" value="small" name="size">
-              <label for="small">&lt;  20lb</label>
-              <input type="checkbox" id="medium" value="medium" name="size">
+              <input type="checkbox" id="small" value="small" name="size" />
+              <label for="small">&lt; 20lb</label>
+              <input type="checkbox" id="medium" value="medium" name="size" />
               <label for="medium">20-55lb</label>
-              <input type="checkbox" id="large" value="large" name="size">
-              <label for="large">&gt;  55lb</label>
+              <input type="checkbox" id="large" value="large" name="size" />
+              <label for="large">&gt; 55lb</label>
             </div>
           </fieldset>
 
           <fieldset class="energy-level-field">
             <legend class="energy-level">Energy Level</legend>
             <div class="energy-level-container">
-              <input type="checkbox" id="low" value="low" name="energy-level">
+              <input type="checkbox" id="low" value="low" name="energy-level" />
               <label for="low">Low</label>
-              <input type="checkbox" id="moderate" value="moderate" name="energy-level">
+              <input
+                type="checkbox"
+                id="moderate"
+                value="moderate"
+                name="energy-level"
+              />
               <label for="moderate">Moderate</label>
-              <input type="checkbox" id="high" value="high" name="energy-level">
+              <input
+                type="checkbox"
+                id="high"
+                value="high"
+                name="energy-level"
+              />
               <label for="high">High</label>
             </div>
           </fieldset>
 
           <fieldset class="find-near-field">
             <legend class="find-near">Find Near</legend>
-            <input type="text" class="postal-code" id="postalcode" placeholder="Postal Code" pattern="[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d">
+            <input
+              type="text"
+              class="postal-code"
+              id="postalcode"
+              placeholder="Postal Code"
+              pattern="[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d"
+            />
           </fieldset>
 
           <fieldset class="search-button-field">
             <legend class="search">Find PupPals</legend>
-            <button class="orange-button search-button"><a href="#">SEARCH</a></button>
+            <a href="#"
+              ><button class="orange-button search-button">SEARCH</button></a
+            >
           </fieldset>
         </form>
       </section>
@@ -82,7 +108,11 @@
 
       <section class="profile-section">
         <div class="card">
-          <img class="profile-photo" src="images\buncha.jpg" alt="small cream colour dog">
+          <img
+            class="profile-photo"
+            src="images\buncha.jpg"
+            alt="small cream colour dog"
+          />
           <ul class="container">
             <li class="name">Buncha</li>
             <li class="breed">Maltipoo</li>
@@ -91,32 +121,58 @@
             <li class="weight">10lb</li>
             <li class="distance">0.2km</li>
           </ul>
-          <button class="orange-button view-profile-button"><a class="profile-button" href="#popup1">View Profile</a></button>
+          <a class="profile-button" href="#popup1"
+            ><button class="orange-button view-profile-button">
+              View Profile
+            </button></a
+          >
 
           <div id="popup1" class="overlay">
             <div class="full-profile">
               <a class="close" href="#">&times;</a>
-              <img class="pop-up-photo" src="images\buncha.jpg" alt="small cream colour dog">
+              <img
+                class="pop-up-photo"
+                src="images\buncha.jpg"
+                alt="small cream colour dog"
+              />
               <ul class="profile-container">
                 <li class="name">Name: Buncha</li>
                 <li class="breed"><span class="bold">Breed:</span> Maltipoo</li>
                 <li class="sex"><span class="bold">Sex:</span> M</li>
                 <li class="age"><span class="bold">Age:</span> 6yr</li>
                 <li class="weight"><span class="bold">Weight:</span> 10lb</li>
-                <li class="distance"><span class="bold">Distance:</span> 0.2km</li>
-                <li class="level-of-energy"><span class="bold">Energy-Level:</span> Moderate</li>
-                <li class="favourite-activities"><span class="bold">Favourite Activities:</span> Fetching, Going for a walk</li>
-                <li class="name-of-pawrents"><span class="bold">Name of Pawrents:</span> Kelly</li>
-                <li class="message"><span class="bold">Message:</span> Hello! We are new to the area and looking for a fun playdate!</li>
+                <li class="distance">
+                  <span class="bold">Distance:</span> 0.2km
+                </li>
+                <li class="level-of-energy">
+                  <span class="bold">Energy-Level:</span> Moderate
+                </li>
+                <li class="favourite-activities">
+                  <span class="bold">Favourite Activities:</span> Fetching,
+                  Going for a walk
+                </li>
+                <li class="name-of-pawrents">
+                  <span class="bold">Name of Pawrents:</span> Kelly
+                </li>
+                <li class="message">
+                  <span class="bold">Message:</span> Hello! We are new to the
+                  area and looking for a fun playdate!
+                </li>
               </ul>
-              <button class="orange-button add-friend-button">Add Friend</button>
+              <button class="orange-button add-friend-button">
+                Add Friend
+              </button>
               <button class="orange-button message-button">Message</button>
             </div>
           </div>
         </div>
 
         <div class="card">
-          <img class="profile-photo" src="images\oreo.jpg" alt="large white and black colour short haired dog">
+          <img
+            class="profile-photo"
+            src="images\oreo.jpg"
+            alt="large white and black colour short haired dog"
+          />
           <ul class="container">
             <li class="name">Oreo</li>
             <li class="breed">Husky-mix</li>
@@ -125,32 +181,59 @@
             <li class="weight">60lb</li>
             <li class="distance">0.3km</li>
           </ul>
-          <button class="orange-button view-profile-button"><a class="profile-button" href="#popup2">View Profile</a></button>
+          <a class="profile-button" href="#popup2"
+            ><button class="orange-button view-profile-button">
+              View Profile
+            </button></a
+          >
 
           <div id="popup2" class="overlay">
             <div class="full-profile">
               <a class="close" href="#">&times;</a>
-              <img class="pop-up-photo" src="images\oreo.jpg" alt="large white and black colour short haired dog">
+              <img
+                class="pop-up-photo"
+                src="images\oreo.jpg"
+                alt="large white and black colour short haired dog"
+              />
               <ul class="profile-container">
                 <li class="name">Name: Oreo</li>
-                <li class="breed"><span class="bold">Breed:</span> Husky-mix</li>
+                <li class="breed">
+                  <span class="bold">Breed:</span> Husky-mix
+                </li>
                 <li class="sex"><span class="bold">Sex:</span> F</li>
                 <li class="age"><span class="bold">Age:</span> 9yr</li>
                 <li class="weight"><span class="bold">Weight:</span> 60lb</li>
-                <li class="distance"><span class="bold">Distance:</span> 0.3km</li>
-                <li class="level-of-energy"><span class="bold">Energy-Level:</span> Moderate</li>
-                <li class="favourite-activities"><span class="bold">Favourite Activities:</span> Hiking</li>
-                <li class="name-of-pawrents"><span class="bold">Name of Pawrents:</span> Dominika</li>
-                <li class="message"><span class="bold">Message:</span> My pup and I can't wait to make new friends and have some fun at the next meet up. </li>
+                <li class="distance">
+                  <span class="bold">Distance:</span> 0.3km
+                </li>
+                <li class="level-of-energy">
+                  <span class="bold">Energy-Level:</span> Moderate
+                </li>
+                <li class="favourite-activities">
+                  <span class="bold">Favourite Activities:</span> Hiking
+                </li>
+                <li class="name-of-pawrents">
+                  <span class="bold">Name of Pawrents:</span> Dominika
+                </li>
+                <li class="message">
+                  <span class="bold">Message:</span> My pup and I can't wait to
+                  make new friends and have some fun at the next meet up.
+                </li>
               </ul>
-              <button class="orange-button add-friend-button">Add Friend</button>
+              <button class="orange-button add-friend-button">
+                Add Friend
+              </button>
               <button class="orange-button message-button">Message</button>
             </div>
           </div>
         </div>
 
         <div class="card">
-          <img class="profile-photo" src="images\ziggy.jpg" alt="small white and black colour dog">
+          <img
+            class="profile-photo"
+            src="images\ziggy.jpg"
+            alt="small white and black colour dog"
+          />
           <ul class="container">
             <li class="name">Ziggy</li>
             <li class="breed">Shih Tzu</li>
@@ -158,33 +241,58 @@
             <li class="age">5yr</li>
             <li class="weight">12lb</li>
             <li class="distance">0.7km</li>
-            </ul>
-          <button class="orange-button view-profile-button"><a class="profile-button" href="#popup3">View Profile</a></button>
+          </ul>
+          <a class="profile-button" href="#popup3"
+            ><button class="orange-button view-profile-button">
+              View Profile
+            </button></a
+          >
 
           <div id="popup3" class="overlay">
             <div class="full-profile">
               <a class="close" href="#">&times;</a>
-              <img class="pop-up-photo" src="images\ziggy.jpg" alt="small white and black colour dog">
+              <img
+                class="pop-up-photo"
+                src="images\ziggy.jpg"
+                alt="small white and black colour dog"
+              />
               <ul class="profile-container">
                 <li class="name">Name: Ziggy</li>
                 <li class="breed"><span class="bold">Breed:</span> Shih Tzu</li>
                 <li class="sex"><span class="bold">Sex:</span> F</li>
                 <li class="age"><span class="bold">Age:</span> 5yr</li>
                 <li class="weight"><span class="bold">Weight:</span> 12lb</li>
-                <li class="distance"><span class="bold">Distance:</span> 0.7km</li>
-                <li class="level-of-energy"><span class="bold">Energy-Level:</span> High</li>
-                <li class="favourite-activities"><span class="bold">Favourite Activities:</span> Taking a nap</li>
-                <li class="name-of-pawrents"><span class="bold">Name of Pawrents:</span> Angie</li>
-                <li class="message"><span class="bold">Message:</span> Hello! Anyone interested in indoor playdates?</li>
+                <li class="distance">
+                  <span class="bold">Distance:</span> 0.7km
+                </li>
+                <li class="level-of-energy">
+                  <span class="bold">Energy-Level:</span> High
+                </li>
+                <li class="favourite-activities">
+                  <span class="bold">Favourite Activities:</span> Taking a nap
+                </li>
+                <li class="name-of-pawrents">
+                  <span class="bold">Name of Pawrents:</span> Angie
+                </li>
+                <li class="message">
+                  <span class="bold">Message:</span> Hello! Anyone interested in
+                  indoor playdates?
+                </li>
               </ul>
-              <button class="orange-button add-friend-button">Add Friend</button>
+              <button class="orange-button add-friend-button">
+                Add Friend
+              </button>
               <button class="orange-button message-button">Message</button>
             </div>
           </div>
         </div>
 
         <div class="card">
-          <img class="profile-photo" src="images\bentley.jpg" alt="small white gray brown mixed colour dog">
+          <img
+            class="profile-photo"
+            src="images\bentley.jpg"
+            alt="small white gray brown mixed colour dog"
+          />
           <ul class="container">
             <li class="name">Bentley</li>
             <li class="breed">Mini Aussie Sheppard</li>
@@ -193,32 +301,59 @@
             <li class="weight">20lb</li>
             <li class="distance">1.0km</li>
           </ul>
-          <button class="orange-button view-profile-button"><a class="profile-button" href="#popup4">View Profile</a></button>
+          <a class="profile-button" href="#popup4"
+            ><button class="orange-button view-profile-button">
+              View Profile
+            </button></a
+          >
 
           <div id="popup4" class="overlay">
             <div class="full-profile">
               <a class="close" href="#">&times;</a>
-              <img class="pop-up-photo" src="images\bentley.jpg" alt="ssmall white gray brown mixed colour dog">
+              <img
+                class="pop-up-photo"
+                src="images\bentley.jpg"
+                alt="ssmall white gray brown mixed colour dog"
+              />
               <ul class="profile-container">
                 <li class="name">Name: Bentley</li>
-                <li class="breed"><span class="bold">Breed:</span> Mini Aussie Sheppard</li>
+                <li class="breed">
+                  <span class="bold">Breed:</span> Mini Aussie Sheppard
+                </li>
                 <li class="sex"><span class="bold">Sex:</span> M</li>
                 <li class="age"><span class="bold">Age:</span> 3 mo</li>
                 <li class="weight"><span class="bold">Weight:</span> 20lb</li>
-                <li class="distance"><span class="bold">Distance:</span> 1.0km</li>
-                <li class="level-of-energy"><span class="bold">Energy-Level:</span> High</li>
-                <li class="favourite-activities"><span class="bold">Favourite Activities:</span> Running</li>
-                <li class="name-of-pawrents"><span class="bold">Name of Pawrents:</span> Mark</li>
-                <li class="message"><span class="bold">Message:</span> Hi! This is my pup's first time at a dog meet up, so we're both very excited.</li>
+                <li class="distance">
+                  <span class="bold">Distance:</span> 1.0km
+                </li>
+                <li class="level-of-energy">
+                  <span class="bold">Energy-Level:</span> High
+                </li>
+                <li class="favourite-activities">
+                  <span class="bold">Favourite Activities:</span> Running
+                </li>
+                <li class="name-of-pawrents">
+                  <span class="bold">Name of Pawrents:</span> Mark
+                </li>
+                <li class="message">
+                  <span class="bold">Message:</span> Hi! This is my pup's first
+                  time at a dog meet up, so we're both very excited.
+                </li>
               </ul>
-              <button class="orange-button add-friend-button">Add Friend</button>
+              <button class="orange-button add-friend-button">
+                Add Friend
+              </button>
               <button class="orange-button message-button">Message</button>
             </div>
           </div>
         </div>
-    
+
         <div class="card">
-          <img class="profile-photo" src="images\beckham.jpg" alt="small brown silver mixed long haired dog">
+          <img
+            class="profile-photo"
+            src="images\beckham.jpg"
+            alt="small brown silver mixed long haired dog"
+          />
           <ul class="container">
             <li class="name">Beckham</li>
             <li class="breed">Morkie</li>
@@ -227,33 +362,58 @@
             <li class="weight">10lb</li>
             <li class="distance">2.2km</li>
           </ul>
-          <button class="orange-button view-profile-button"><a class="profile-button" href="#popup5">View Profile</a></button>
+          <a class="profile-button" href="#popup5"
+            ><button class="orange-button view-profile-button">
+              View Profile
+            </button></a
+          >
 
           <div id="popup5" class="overlay">
             <div class="full-profile">
               <a class="close" href="#">&times;</a>
-              <img class="pop-up-photo" src="images\beckham.jpg" alt="small brown silver mixed long haired dog">
+              <img
+                class="pop-up-photo"
+                src="images\beckham.jpg"
+                alt="small brown silver mixed long haired dog"
+              />
               <ul class="profile-container">
                 <li class="name">Name: Beckham</li>
                 <li class="breed"><span class="bold">Breed:</span> Morkie</li>
                 <li class="sex"><span class="bold">Sex:</span> M</li>
                 <li class="age"><span class="bold">Age:</span> 7yr</li>
                 <li class="weight"><span class="bold">Weight:</span> 10lb</li>
-                <li class="distance"><span class="bold">Distance:</span> 2.2km</li>
-                <li class="level-of-energy"><span class="bold">Energy-Level:</span> Moderate</li>
-                <li class="favourite-activities"><span class="bold">Favourite Activities:</span> Fetching</li>
-                <li class="name-of-pawrents"><span class="bold">Name of Pawrents:</span> Troy</li>
-                <li class="message"><span class="bold">Message:</span> Hello dog lovers! Just a friendly paw wave from me and my pooch.</li>
+                <li class="distance">
+                  <span class="bold">Distance:</span> 2.2km
+                </li>
+                <li class="level-of-energy">
+                  <span class="bold">Energy-Level:</span> Moderate
+                </li>
+                <li class="favourite-activities">
+                  <span class="bold">Favourite Activities:</span> Fetching
+                </li>
+                <li class="name-of-pawrents">
+                  <span class="bold">Name of Pawrents:</span> Troy
+                </li>
+                <li class="message">
+                  <span class="bold">Message:</span> Hello dog lovers! Just a
+                  friendly paw wave from me and my pooch.
+                </li>
               </ul>
-              <button class="orange-button add-friend-button">Add Friend</button>
+              <button class="orange-button add-friend-button">
+                Add Friend
+              </button>
               <button class="orange-button message-button">Message</button>
             </div>
           </div>
         </div>
 
         <div class="card">
-          <img class="profile-photo" src="images\mocha.jpg" alt="medium sized brown curly haired dog">
-            <ul class="container">
+          <img
+            class="profile-photo"
+            src="images\mocha.jpg"
+            alt="medium sized brown curly haired dog"
+          />
+          <ul class="container">
             <li class="name">Mocha</li>
             <li class="breed">Cockapoo</li>
             <li class="sex">M</li>
@@ -261,25 +421,47 @@
             <li class="weight">25lb</li>
             <li class="distance">3.2km</li>
           </ul>
-          <button class="orange-button view-profile-button"><a class="profile-button" href="#popup6">View Profile</a></button>
+          <a class="profile-button" href="#popup6"
+            ><button class="orange-button view-profile-button">
+              View Profile
+            </button></a
+          >
 
           <div id="popup6" class="overlay">
             <div class="full-profile">
               <a class="close" href="#">&times;</a>
-              <img class="pop-up-photo" src="images\mocha.jpg" alt="medium sized brown curly haired dog">
+              <img
+                class="pop-up-photo"
+                src="images\mocha.jpg"
+                alt="medium sized brown curly haired dog"
+              />
               <ul class="profile-container">
                 <li class="name">Name: Mocha</li>
                 <li class="breed"><span class="bold">Breed:</span> Cockapoo</li>
                 <li class="sex"><span class="bold">Sex:</span> M</li>
                 <li class="age"><span class="bold">Age:</span> 8yr</li>
                 <li class="weight"><span class="bold">Weight:</span> 25lb</li>
-                <li class="distance"><span class="bold">Distance:</span> 3.2km</li>
-                <li class="level-of-energy"><span class="bold">Energy-Level:</span> Low</li>
-                <li class="favourite-activities"><span class="bold">Favourite Activities:</span> Swimming</li>
-                <li class="name-of-pawrents"><span class="bold">Name of Pawrents:</span> Sai</li>
-                <li class="message"><span class="bold">Message:</span> Just wanted to say hi and let you know that my dog and I are eager to attend the next meet up.</li>
+                <li class="distance">
+                  <span class="bold">Distance:</span> 3.2km
+                </li>
+                <li class="level-of-energy">
+                  <span class="bold">Energy-Level:</span> Low
+                </li>
+                <li class="favourite-activities">
+                  <span class="bold">Favourite Activities:</span> Swimming
+                </li>
+                <li class="name-of-pawrents">
+                  <span class="bold">Name of Pawrents:</span> Sai
+                </li>
+                <li class="message">
+                  <span class="bold">Message:</span> Just wanted to say hi and
+                  let you know that my dog and I are eager to attend the next
+                  meet up.
+                </li>
               </ul>
-              <button class="orange-button add-friend-button">Add Friend</button>
+              <button class="orange-button add-friend-button">
+                Add Friend
+              </button>
               <button class="orange-button message-button">Message</button>
             </div>
           </div>
@@ -295,11 +477,19 @@
         <p>Phone: 1-800-PUPPALS</p>
       </div>
       <div class="footer-right">
-        <a href="#" taget="_blank"><img src="images\facebook-icon.svg" alt="facebook icon"></a>
-        <a href="#" taget="_blank"><img src="images\twitter-icon.svg" alt="twitter icon"></a>
-        <a href="#" taget="_blank"><img src="images\instagram-icon.svg" alt="instagram icon"></a>
-        <a href="#" taget="_blank"><img src="images\tiktok-icon.svg" alt="tiktok icon"></a>
+        <a href="#" taget="_blank"
+          ><img src="images\facebook-icon.svg" alt="facebook icon"
+        /></a>
+        <a href="#" taget="_blank"
+          ><img src="images\twitter-icon.svg" alt="twitter icon"
+        /></a>
+        <a href="#" taget="_blank"
+          ><img src="images\instagram-icon.svg" alt="instagram icon"
+        /></a>
+        <a href="#" taget="_blank"
+          ><img src="images\tiktok-icon.svg" alt="tiktok icon"
+        /></a>
       </div>
-    </footer>    
+    </footer>
   </body>
 </html>
